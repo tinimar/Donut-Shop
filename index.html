@@ -1,41 +1,42 @@
-<!doctype <!DOCTYPE html>
-<body>
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Donuts Donuts</title>
+		<link href="donut.css" type="text/css" rel="stylesheet" />
 
-<img src="http://www.lookylocal.com/wp-content/uploads/2015/06/1427691863914.jpeg" alt="donuts" style="width:304px;height:228px;">
+	</head>
 
-</body>
 
-<script>
-//DonutShop
-	function getRandomArbitrary( min, max ) {
-	  			return Math.random() * ( max - min ) + min;
-	  			}
-	function DonutShop( name, minCust, maxCust, avgDonPerCust, opens, closes, hoursOpen ){
-	    this.name = name;
-	    this.minCust = minCust;
-	    this.maxCust = maxCust;
-	    this.avgDonPerCust = avgDonPerCust;
-	    this.opens = opens;
-	    this.closes = closes;
-	    this.hoursOpen = this.closes - this.opens;
-	    this.hourlyCust = getRandomArbitrary( minCust, maxCust );
-	    this.hourlyDonuts = this.hourlyCust * this.avgDonPerCust;
-	    this.dailyDonuts = function dailyDonuts () {
-	    	return this.hourlyDonuts * this.hoursOpen;
-	    };
-	}
+	<body>
 
-	var downtown = new DonutShop( 'Downtown', 8, 43, 4.5, 6, 16 );
-	var alberta = new DonutShop( 'Alberta', 4, 37, 2, 10, 20 );
-	var hawthorne = new DonutShop( 'Hawthorne', 9, 23, 6.33, 9, 17 );
-	var sellwood = new DonutShop( 'Sellwood', 2, 28, 1.25, 11, 15 );
-	var sandy = new DonutShop( 'Sandy', 8, 58, 3.75, 5, 15 );
+		<h1><span class="rainbowize">Donuts Donuts</span></h1>
+		<h2>The best donuts in the world.</h2>
+		<p>Use this table to see how many donuts to make each hour, and each day. Compare to actual numbers and shrink.
+		</p>
 
-    var shops = [ downtown, alberta, hawthorne, sellwood, sandy ];
+		<table>
+			<thead>
+				<tr>
+					<th>Branch Name</th>
+					<th>Donuts per Hour</th>
+					<th>Donuts per day</th>
+					
+				</tr>
+			</thead>
 
-    console.log ( 'Donut Shop Branches' )
-    for ( var i = 0; i < shops.length; i++ ){
-    	console.log ( shops[i].name, shops[i].hourlyDonuts + ' Donuts per Hour;', shops[i].dailyDonuts() + ' Donuts per Day' )
-    }
+			<tbody>
 
-</script>
+			</tbody>
+		</table>
+
+		<footer>
+			&copy: Martini's Donut Shop 2015
+		</footer>
+
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+	<script src="branches.js"></script>
+	<script src="app.js"></script>
+
+
+	</body>
+</html>
