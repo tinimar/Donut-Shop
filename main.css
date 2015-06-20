@@ -1,0 +1,55 @@
+<link href='http://fonts.googleapis.com/css?family=Kadwa' rel='stylesheet' type='text/css'>
+body {
+  color: #19AC87;
+  font-family: 'Kadwa', serif;
+  font-size: 100%;
+  letter-spacing: ;
+  line-height: 1em;
+  text-align: justify;
+  background-color: #00CC00;
+  background-image: url('images/donuts_woodtable.jpg');
+}
+
+.rainbowize {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+h1 {
+	font-size: 250%;
+	text-align: center;
+}
+
+h2 {
+	font-size: 150%;
+	font-style: oblique;
+}
+
+p {
+  color: #19AC87;
+
+}
+
+table {
+	padding: 25px;
+	border-collapse: collapse;
+	padding: .5;
+	border-spacing: 2px;
+	border-color: #B2E0E0;
+}
+
+thead {
+	font-style: bold;
+	font-color: #009999;
+
+}
+
+footer {
+font-size: 85%;
+font-style: italic;
+padding-top: 25px;
+text-align: center;
+}
