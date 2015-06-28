@@ -1,42 +1,55 @@
 <!DOCTYPE html>
+<!--homepage-->
+
 <html>
 	<head> 
 		<title>Donuts Donuts</title>
-		<link href="main.css" type="text/css" rel="stylesheet" />
+		<link href="main.css" type="text/css" rel="stylesheet"/>
 
 	</head>
 
 
 	<body>
+		<div class="wrapper">
+			<header>
+				<h1><span class="rainbowize">Donuts Donuts</span></h1>
 
-		<h1><span class="rainbowize">Donuts Donuts</span></h1>
-		<h2>The best donuts in the world.</h2>
-		<p>Use this table to see how many donuts to make each hour, and each day. Compare to actual numbers and shrink.
-		</p>
+				<h2>Be part of the team making the best donuts in the world.</h2>
+			</header>
 
-		<table>
-			<thead>
-				<tr>
-					<th>Branch Name</th>
-					<th>Donuts per Hour</th>
-					<th>Donuts per day</th>
-					
-				</tr>
-			</thead>
+	      <!-- Navigation bar -->	
+	      	<nav>	
+				<ul>
+				  <li><a href="index.html" class="current">Home</a></li>
+				  <li><a href="current-locations.html">Current Franchises</a></li>
+				  <li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			
+			<article>
+				<figure>
+					<img src="images/legodonutshop.jpg" width="280" height="290"alt="Donut Shop" />
+				</figure>
+				<h3>Frustrated with working long hours for a company you don't like?</h3>
+				<p>Tired of your boss and working 9-5? Start a Donuts Donuts franchise and be your own boss! Work less than 20 hours a week, and make up to $49,000!</p>
 
-			<tbody>
+			<article>
+				<p> Donuts Donuts franchises are each locally and independently owned - we make the best donuts in town.
 
-			</tbody>
-		</table>
+				What do you get out of owning a Donuts Donuts franchise? You get to own and operate a business without startup headaches. We help you start and design your store and website. You get access to our business tools including custom tracking, analysis and ordering through our distributors. As part of a larger organization, you will have more bargaining sway with distributors. All this for only $5,000 a year<class="initialFee">*! </p>
 
-		<footer>
-			&copy 2015
-		</footer>
+				<p class="initialFee">(There is a small $2,000 initialization fee which gives you access to our interior designers, internal business and marketing tools as well as membership with an employment agency).</p>
+			</article>
+
+			<footer>
+				&copy 2015
+			</footer>
+		</div><!-- .wrapper -->
 
 	<script src="branches.js"></script>
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
 	<script src="app.js"></script>
-
+	<script src="js/jq-load.js"></script>
 
 	</body>
 </html>

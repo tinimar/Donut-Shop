@@ -1,55 +1,144 @@
 <link href='http://fonts.googleapis.com/css?family=Kadwa' rel='stylesheet' type='text/css'>
-body {
-  color: #19AC87;
-  font-family: 'Kadwa', serif;
-  font-size: 100%;
-  letter-spacing: ;
-  line-height: 1em;
-  text-align: justify;
-  background-color: #00CC00;
-  background-image: url('images/donuts_woodtable.jpg');
-}
 
+/* page styling */
+header, footer, nav, article, figure, address {
+  display: block;}
+
+body {
+  color: #333333;
+  background-color: #f9f8f6;
+  background-image: url("images/sprinkles.jpg");
+  background-position: center;
+  font-family: 'Kadwa', serif;
+  font-size: 120%;
+  line-height: 1.4em;
+  margin: 0px 5px;
+  padding: 10px;}
+
+.wrapper {
+  width: 960px;
+  margin: 20px auto 20px auto;
+  border: 1px solid #52CC29;
+  border-radius: 25px;
+  border-spacing: 2px;
+  background: #F0E0B2;}
+
+/* header */
 .rainbowize {
   background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
   background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
-  color:transparent;
+  color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
-}
+  background-clip: text;}
 
-h1 {
-	font-size: 250%;
-	text-align: center;
-}
+header { 
+  background: #F0E0B2 url("images/bfastdonut.jpg"); 
+  padding: 0px;
+  height: 240px;}
 
-h2 {
-	font-size: 150%;
-	font-style: oblique;
-}
+/* nav bar */
+nav ul {
+    margin: 0px auto 0px auto;
+    padding: 0;
+    overflow: hidden;
+    font-size: 100%;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #52CC29;
+    text-align: left;}
 
-p {
-  color: #19AC87;
+nav li {
+    display: inline;
+    position: relative;
+    margin: 75px 75px;}
 
-}
+nav li a:link, a:visited {
+    display: ;
+    width: ;
+    color: #FFFFFF;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;}
 
-table {
-	padding: 25px;
-	border-collapse: collapse;
-	padding: .5;
-	border-spacing: 2px;
-	border-color: #B2E0E0;
-}
+nav li a:hover, a:active {
+    background-color: #398F1D;}
 
-thead {
-	font-style: bold;
-	font-color: #009999;
-
-}
-
+/*footer*/
 footer {
 font-size: 85%;
-font-style: italic;
-padding-top: 25px;
-text-align: center;
-}
+font-style: normal;
+padding-bottom: 5px;
+text-align: center;}
+
+/* text, p, images */
+h1 {
+	font-size: 350%;
+	text-align: center;}
+
+h2 {
+  padding-top: 130px;
+	font-size: 125%;
+	font-style: oblique;
+  text-align: center;}
+
+h3 {
+  font-size: 125%;
+  font-style: bold;
+  text-align: center;}
+
+h4 {
+  font-size: 125%;
+  font-style: normal;
+  text-align: center;
+  padding: 0px;}
+
+figure {
+  float: left;
+  padding: 5px;
+  margin: 0px 50px;
+  border: 1px solid #eeeeee;}
+
+ul {
+    list-style-type: none;}
+
+/* index.html */
+.initialFee {
+  padding: 0px;
+  font-size: 85%;
+  font-style: oblique; 
+  text-align: center; 
+  line-height: 1em;}
+
+/* current-locations.html */
+#shop > li {
+  color: #43A621;
+  height: 150px;
+  text-align: left;
+  padding-top: 15px;
+  font-size: 150%;
+  font-family: cursive;
+  font-weight: 900;
+  cursor: pointer;}
+
+#shop li li {
+  display: none;
+  font-size: 75%;
+  font-family: none;
+  cursor: auto;
+  font-weight: normal;
+  line-height: 1em;
+  padding-top: 10px;}
+
+.images {
+  width: 175px;
+  margin: 0px;
+  border: ;
+  border-radius: ;
+  border-spacing: ;
+  background: #F0E0B2;}
+
+/* contact.html*/
+address ul {
+  text-align: center;
+  font-size: 150%;
+  line-height: 0em;}
